@@ -1,0 +1,550 @@
+/*CSS document*/
+.hidden
+{
+	display: none;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+li,a,button
+{
+	font-size: 14px;
+	letter-spacing: 0.05rem;
+	text-decoration: none;
+}
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+
+}
+
+header
+{
+	width: 90%;
+	height: 18vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+p
+{
+	font-size: 0.9rem;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+.logo-container img
+{
+	width: 162px;
+	height: 55px;
+	cursor: pointer;
+}
+
+.nav-links li
+{
+	display: inline;
+	padding: 0px 20px;
+	list-style: none;
+} 
+
+/* smooth hover animation */
+.nav-links li a
+{
+	text-transform: uppercase;
+	color: orangered;
+	transition: all 0.5s ease 0s;
+}
+
+/* animation action */
+.nav-links li a:hover
+{
+	color: black;
+
+}
+
+/* hide the burger menu */
+.hamburger
+{
+	display: none;
+	cursor: pointer;
+	padding: 0px;
+}
+
+.line1
+{
+	width: 50px;
+	height: 3px;
+	margin: 7px;
+	background-color: orangered;
+}
+
+/* main container */
+.main
+{
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+.splash-page
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10vh;
+}
+
+/* flex -grow, shirnk, and basis */
+.feature-content
+{
+	/* flex: 2 1 450px; */
+	width: 500px;
+    height: 100%;
+
+}
+
+.sub-head
+{
+	font-size: 2.5rem;
+	line-height: 3rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.how-to-sub-header
+{
+	text-align: center;
+}
+
+.orange-header
+{
+	text-align: center;
+	color: orangered;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.body-copy
+{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.feature-content p
+{
+	display: block;
+}
+
+.longhouse
+{
+	flex: 2 1 450px;
+	height: 520px;
+}
+
+.download-button
+{
+	text-align: center;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 200px;
+	height: 55px;
+	color: white;
+	border-radius: 60px;
+	border-style: none;
+	padding: 20px;
+	background: rgb(250,217,97);
+	background: -moz-linear-gradient(45deg, rgba(250,217,97,1) 0%, rgba(247,107,28,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(250,217,97,1) 0%, rgba(247,107,28,1) 100%);
+	background: linear-gradient(45deg, rgba(250,217,97,1) 0%, rgba(247,107,28,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fad961",endColorstr="#f76b1c",GradientType=1);
+	box-shadow: 0 20px 25px -5px rgba(245, 166, 35, 0.49), 0 10px 10px -5px rgba(245, 166, 35, 0.04);;
+	transition: transform 0.3s ease-in;
+}
+
+.download-button:hover
+{
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 200px;
+	height: 55px;
+	color: white;
+	border-radius: 60px;
+	border-style: none;
+	padding: 20px;
+	background: rgb(250,217,97);
+	background: -moz-linear-gradient(75deg, rgba(250,217,97,1) 0%, rgba(247,107,28,1) 100%);
+	background: -webkit-linear-gradient(75deg, rgba(250,217,97,1) 0%, rgba(247,107,28,1) 100%);
+	background: linear-gradient(75deg, rgba(250,217,97,1) 0%, rgba(247,107,28,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fad961",endColorstr="#f76b1c",GradientType=1);
+	box-shadow: 0 20px 25px -5px rgba(245, 166, 35, 0.49), 0 10px 10px -5px rgba(245, 166, 35, 0.04);;
+}
+
+
+.instruction-wrapper
+{
+	margin-top: 120px;
+}
+
+.two-column
+{	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+
+.image-con
+{
+	width: 305px;
+	height: 305px;
+	margin-bottom: 130px;
+}
+
+.image-con p
+{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.download-content
+{
+	margin-bottom: 90px;
+}
+
+.ar-girl img
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.sample-pots
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.title-center
+{
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.sample-pots
+{
+	margin-top: 100px; 
+}
+
+.mission-paragraph
+{
+	margin-bottom: 50px;
+	text-align: center;
+}
+.meet-the-team
+{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.mission-statement
+{
+	width: 65%;
+	margin: 0 auto;
+}
+
+.team-gallery
+{
+	display: flex;
+    flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.team-galley-text p 
+{
+	margin-top: 10px;
+	font-size: 0.9rem;
+	color: #3b3b3b;
+}
+
+.team-gallery div span
+{
+	color: orangered;
+	padding-top: 2px;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.border-keyline
+{
+	margin-top: 40px;
+	padding: 20px 0px;
+	border-top: 1px solid orangered;
+}
+
+footer 
+{	
+    padding: 10px;
+    height: 8vh;
+    border-top: solid 1px black;
+}
+
+footer small 
+{
+    color: black;
+	font-size: 14px;
+	height: 10px;
+    margin: 0 auto;
+}
+
+/********** MEDIA QUERIES ********** */
+/*************************************/
+/*************************************/
+/*************************************/
+
+@media screen and (max-width:1024px)
+{
+
+
+
+}
+/*  when it's a mobile to tablet do this */
+@media screen and (max-width:768px){
+
+	body
+	{
+		overflow-x: hidden;
+	}
+
+	/* main container */
+	.main
+	{
+		width: 90%;
+		margin: 0 auto;
+
+	}
+
+	.hamburger
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.nav-links
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		position: absolute;
+		width: 100%;
+		top: 0vh;
+		right: 0px;
+		height: 100vh;
+		background-color: orangered;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+
+	.nav-links li a
+	{
+		color: white;
+		font-size: 1.8rem;
+		font-weight: 200;
+	}
+
+	.nav-links li
+	{
+		opacity: 0px;
+	}
+
+	.splash-page
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.feature-content
+	{
+		width: 95%;
+		margin-bottom: 100px;
+	}
+
+	.instruction-wrapper
+	{
+		display: contents;
+		width: 100%;
+
+	}
+
+	.two-column
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-top: 80px;
+	}
+
+	.ar-girl img
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.sample-pots
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.sample-pots > div
+	{ 
+		cursor: pointer;
+		justify-content: space-around;
+		margin-bottom: 50px;
+	}
+
+	.mission-statement
+	{
+		width: 85%;
+		margin-top: 50px;
+	}
+
+	.mission-statement p
+	{
+		margin-bottom: 50px;
+	}
+
+	.mission-paragraph
+	{
+		margin: 0 auto;
+	}
+
+	.gallery-wrapper
+	{
+		width: 70%;
+	}
+
+	.team-gallery
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.team-gallery div
+	{
+		/* width: 50%; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+
+	}
+
+	.hero-image
+	{
+
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.longhouse
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+	.splash-page
+	{
+		margin-bottom: 10vh;
+	}
+
+	.team-gallery-text p
+	{
+		margin-top: 10px;
+	}
+
+	.team-gallery-text span
+	{
+		margin-bottom: 25px;
+	}
+
+	footer 
+	{
+		padding: 20px;
+		height: 8vh;
+		border-top: solid 1px black;
+	}
+
+	footer small 
+	{
+		color: black;
+		font-size: 14px;
+		margin: 0 auto;
+	}
+}
+
+/*  when you click the burger  */
+.nav-active
+{
+	-o-transform: translateX(0%);
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade
+{
+	from
+	{
+		opacity: 0;
+		-o-transform: translateX(50px);
+		-webkit-transform: translateX(50px);
+		-moz-transform: translateX(50px);
+		-ms-transform: translateX(50px);
+		transform: translateX(50px);
+	}
+	to
+	{
+		opacity: 1px;
+		-o-transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		transform: translateX(0px);
+	}
+}
