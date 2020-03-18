@@ -57,6 +57,7 @@ li,a,button
 
 body
 {
+	color: white;
 	font-family: 'Open Sans', sans-serif;
 	background-repeat: no-repeat;
 	background: #0f161c;
@@ -77,9 +78,10 @@ header
 
 p
 {
-	font-size: 0.9rem;
+	font-size: 1vw;
 	font-weight: 300;
 	line-height: 25px;
+	letter-spacing: 0.07rem;
 }
 
 .logo-container img
@@ -132,30 +134,55 @@ p
 {
 	width: 90%;
 	margin: 0 auto;
-
 }
 
-h3
+.home-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 72vh;
+}
+
+.home-container h2
+{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 2.75rem;
+}
+
+/* main page header */
+.home-container h3
 {
 	font-family: 'Optima';
     font-style: normal;
 	font-weight: normal;
 	color: white;
-
+	font-size: 14vw;
+	text-transform: uppercase;
+	letter-spacing: 2.25rem;
 }
 
+.blurb
+{
+	width: 60%;
+	text-align: center;
+	line-height: 3vh;
+
+}
 
 footer 
 {	
     padding: 10px;
     height: 8vh;
-    border-top: solid 1px black;
 }
 
 footer small 
 {
-    color: white;
-	font-size: 14px;
+	color: white;
+	font-weight: 300;
+	font-size: 1vw;
 	height: 10px;
     margin: 0 auto;
 }
@@ -205,7 +232,7 @@ footer small
 		top: 0vh;
 		right: 0px;
 		height: 100vh;
-		background-color: orangered;
+		background-color: #0f161c;
 		transform: translateX(100%);
 		transition: transform 0.3s ease-in;
 	}
@@ -222,23 +249,53 @@ footer small
 		opacity: 0px;
 	}
 
+	.home-container h2
+	{
+		text-transform: uppercase;
+		font-weight: 100;
+		font-size: 4vw;
+		margin-bottom: 10px;
+	}
+
+	/* main page header */
+	.home-container h3
+	{
+		font-family: 'Optima';
+		font-style: normal;
+		font-weight: normal;
+		color: white;
+		font-size: 18vw;
+		text-transform: uppercase;
+		letter-spacing: 1.25rem;
+		margin-bottom: 10px;
+
+	}
+
+	/*  paragraph blurb */
+	.blurb
+	{
+		font-size: 2vw;
+		line-height: 3vh;
+		width: 75vw;
+		text-align: center;
+	}
 	
 	footer 
 	{
 		padding: 20px;
 		height: 8vh;
-		border-top: solid 1px black;
 	}
 
 	footer small 
 	{
-		color: black;
-		font-size: 14px;
+		color: white;
+		font-weight: 300;
+		font-size: 2vw;
 		margin: 0 auto;
 	}
 }
 
-/*  when you click the burger  */
+ /* when you click the burger  */
 .nav-active
 {
 	-o-transform: translateX(0%);
