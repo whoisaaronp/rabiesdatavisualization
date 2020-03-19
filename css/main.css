@@ -81,7 +81,8 @@ p
 	font-size: 1vw;
 	font-weight: 300;
 	line-height: 25px;
-	letter-spacing: 0.07rem;
+	font-kerning: normal;
+	/* letter-spacing: 0.07rem; */
 }
 
 .logo-container
@@ -302,15 +303,75 @@ p
 #statistic-report
 {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
-	margin-top: 150px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 
 }
 
 #statistic-report h3
 {
 	font-size: 5vw;
+}
+
+.data-container
+{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+
+.data-columns
+{
+	text-align: center;
+	/* text-transform: uppercase; */
+}
+
+.data-title h4
+{
+	font-size: 0.90vw;
+	font-weight: 300;
+	margin-bottom: 40px;
+	letter-spacing: 2px;
+}
+
+.data-number p
+{
+	font-weight: 300;
+	font-size: 4vw;
+}
+
+/* last feature content section */
+
+.rabies-details-container-2
+{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	margin-top: 150px;
+}
+
+.rabies-feature-2
+{
+	width: 700px;
+	height: 500px;
+	background-color: white;
+}
+
+.rabies-details-text-2
+{
+	width: 400px;
+	height: 600px;
+	padding: 40px;
+}
+
+.rabies-details-text-2 h3
+{
+	font-size: 3vw;
+	margin-bottom: 20px;
 
 }
 
