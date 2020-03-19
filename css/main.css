@@ -19,7 +19,6 @@
 }
 @font-face {
 	font-family: 'Optima Bold';
-	color: white;
     font-style: normal;
     font-weight: normal;
     src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
@@ -53,7 +52,6 @@ li,a,button
 	letter-spacing: 0.05rem;
 	text-decoration: none;
 }
-
 
 body
 {
@@ -449,7 +447,7 @@ footer small
 
 	.nav-links li
 	{
-		opacity: 0px;
+		opacity: 0;
 	}
 
 	.home-container h2
