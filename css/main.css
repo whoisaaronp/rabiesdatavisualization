@@ -79,8 +79,12 @@ p
 	font-size: 1vw;
 	font-weight: 300;
 	line-height: 25px;
-	font-kerning: normal;
-	/* letter-spacing: 0.07rem; */
+	font-kerning: initial;
+}
+
+em 
+{
+	font-style: italic;
 }
 
 .logo-container
@@ -162,7 +166,8 @@ p
 {
 	text-transform: uppercase;
 	font-weight: 100;
-	font-size: 2.75rem;
+	font-size: 2.50rem;
+	font-kerning: initial;
 }
 
 /* main page header */
@@ -407,6 +412,14 @@ footer small
 		overflow-x: hidden;
 	}
 
+	p
+	{
+		font-size: 1.50vw;
+		font-weight: 300;
+		line-height: 25px;
+		font-kerning: normal;
+	}
+
 	/* main container */
 	.main
 	{
@@ -447,7 +460,7 @@ footer small
 
 	.nav-links li
 	{
-		opacity: 0;
+		opacity: 0px;
 	}
 
 	.home-container h2
@@ -487,6 +500,20 @@ footer small
 		display: none;
 	}
 
+	.feature-content > div
+	{
+		width: 437px;
+		height: 601px;
+		background-color: white;
+
+	}
+
+	.rabies-feature {
+		width: 450px;
+		height: 500px;
+		background-color: white;
+	}
+	
 	footer 
 	{
 		padding: 20px;
@@ -516,7 +543,7 @@ footer small
 {
 	from
 	{
-		opacity: 0;
+		opacity: 0px;
 		-o-transform: translateX(50px);
 		-webkit-transform: translateX(50px);
 		-moz-transform: translateX(50px);
