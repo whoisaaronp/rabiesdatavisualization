@@ -195,6 +195,7 @@ p
 
 .discover-button > div
 {
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -212,6 +213,13 @@ p
 	height: 10px;
 }
 
+/* feature container */
+.feature-container
+{
+	width: 80%;
+	height: 100vh;
+	margin-top: 300px;
+}
 
 @keyframes jumping
 {
