@@ -84,11 +84,24 @@ p
 	letter-spacing: 0.07rem;
 }
 
+.logo-container
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .logo-container img
 {
-	width: 162px;
-	height: 55px;
+	width: 60px;
+	height: 27.5px;
 	cursor: pointer;
+}
+
+.logo-container h2
+{
+	font-weight: 700;
+	letter-spacing: 0.09vw;
 }
 
 .nav-links li
@@ -136,6 +149,7 @@ p
 	margin: 0 auto;
 }
 
+
 .home-container
 {
 	display: flex;
@@ -170,6 +184,39 @@ p
 	text-align: center;
 	line-height: 3vh;
 
+}
+
+.discover-button
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discover-button > div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hover-pointer
+{
+	padding-top: 6%;
+	animation: jumping 1s infinite alternate;
+}
+
+.hover-pointer img
+{
+	width: 25px;
+	height: 10px;
+}
+
+
+@keyframes jumping
+{
+	0%{transform: translateY(0);}
+	100%{transform: translateY(-10px);}
 }
 
 footer 
@@ -280,6 +327,12 @@ footer small
 		text-align: center;
 	}
 	
+	/* Hide logo text in mobile */
+	.logo-text
+	{
+		display: none;
+	}
+
 	footer 
 	{
 		padding: 20px;
