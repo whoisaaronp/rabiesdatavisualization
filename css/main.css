@@ -223,7 +223,7 @@ p
 .feature-container
 {
 	/* width: 90%; */
-	height: 100vh;
+	/* height: 100vh; */
 	margin: 0 auto;
 }
 
@@ -268,13 +268,56 @@ p
 	margin-bottom: 20px;
 } 
 
+/* second content - rabies detail */
 
+.rabies-details-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 150px;
+}
 
+.rabies-feature
+{
+	width: 700px;
+	height: 500px;
+	background-color: white;
+}
+
+.rabies-details-text
+{
+	width: 400px;
+	height: 600px;
+	padding: 40px;
+}
+
+.rabies-details-text h3
+{
+	font-size: 3vw;
+	margin-bottom: 20px;
+
+}
+
+#statistic-report
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 150px;
+
+}
+
+#statistic-report h3
+{
+	font-size: 5vw;
+
+}
 
 footer 
 {	
     padding: 10px;
-    height: 8vh;
+	height: 8vh;
 }
 
 footer small 
