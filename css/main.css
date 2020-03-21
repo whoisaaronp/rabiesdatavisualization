@@ -251,23 +251,24 @@ em
 .feature-content article
 {
 	width: 530px;
-    padding-left: 40px;
+    padding: 0px 40px 0px 40px;
 }
 
 .feature-content article h3
 {
 	font-size: 10vw;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.feature-container article p
+/* .feature-container article p
 {
 	margin-bottom: 20px;
-}
+} */
 
 .feature-container article span
 {
-	font-size: 0.75vw;
+	font-size: 0.95vw;
 	font-weight: 300;
 	margin-bottom: 20px;
 } 
@@ -293,7 +294,7 @@ em
 {
 	width: 400px;
 	height: 600px;
-	padding: 40px;
+	padding: 0px 40px 0px 40px;
 }
 
 .rabies-details-text h3
@@ -302,6 +303,11 @@ em
 	margin-bottom: 20px;
 
 }
+.rabies-details-text:nth-child(2)
+{
+	margin-bottom: 10px;
+	background-color: yellow;
+}
 
 #statistic-report
 {
@@ -309,7 +315,6 @@ em
 	justify-content: center;
 	margin-top: 40px;
 	margin-bottom: 40px;
-
 }
 
 #statistic-report h3
@@ -377,6 +382,23 @@ em
 	margin-bottom: 20px;
 
 }
+
+/* symptoms page */
+.rabies-symptom-video
+{
+	width: 640px;
+	height:360px;
+	background-color: white;
+}
+
+.rabies-details-text h3
+{
+	font-size: 3vw;
+	margin-top: 20px;
+}
+
+/* global cases report */
+.
 
 footer 
 {	
@@ -500,6 +522,13 @@ footer small
 		display: none;
 	}
 
+	.feature-container article span
+	{
+		font-size: 1.25vw;
+		font-weight: 300;
+		margin-bottom: 20px;
+	} 
+
 	.feature-content > div
 	{
 		width: 437px;
@@ -513,6 +542,16 @@ footer small
 		background-color: white;
 	}
 
+	.rabies-details-container
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 150px;
+	}
+
 	.data-container
 	{
 		width: 90%;
@@ -524,8 +563,35 @@ footer small
 	.data-title h4
 	{
 		font-size: 1.25vw;
-
 	}
+
+	/* symptoms page */
+	.rabies-symptom-video
+	{
+		width: 640px;
+		height:320px;
+		background-color: white;
+	}
+
+	.rabies-details-text 
+	{
+		width: 640px;
+		height: auto;
+		padding: 28px 0px 28px 0px;
+	}
+
+	.rabies-details-text span
+	{
+		font-size: 1.50vw;
+		margin-top: 20px;
+	}
+
+	.rabies-details-text h3
+	{
+		font-size: 7vw;
+		margin-top: 20px;
+	}
+
 
 	footer 
 	{
