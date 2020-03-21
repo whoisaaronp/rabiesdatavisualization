@@ -303,11 +303,6 @@ em
 	margin-bottom: 20px;
 
 }
-.rabies-details-text:nth-child(2)
-{
-	margin-bottom: 10px;
-	background-color: yellow;
-}
 
 #statistic-report
 {
@@ -398,7 +393,25 @@ em
 }
 
 /* global cases report */
-.
+.global-cases-report-parent
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.global-cases-report-parent h3
+{
+	margin-bottom: 50px;
+}
+
+.global-cases-report-parent picture
+{
+	width: 100%;
+	height: 600px;
+	border: 1px solid #fff;
+}
 
 footer 
 {	
