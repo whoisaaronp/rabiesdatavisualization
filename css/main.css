@@ -89,9 +89,15 @@ em
 
 .logo-container
 {
+	cursor: pointer;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+.logo-text
+{
+	color: white;
 }
 
 .logo-container img
@@ -411,6 +417,69 @@ em
 	width: 100%;
 	height: 600px;
 	border: 1px solid #fff;
+	padding: 30px;
+}
+
+/* stage of infection */
+.stages-of-infection-parent
+{
+	width: 100%;
+	height: auto;
+	margin-top: 150px;
+}
+
+.stages-of-infection-parent h3
+{
+	font-size: 3vw;
+	text-align: center;
+}
+
+.stages
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 70px;
+}
+
+.stages > div
+{
+	width: 30px;
+	height:30px;
+	border-radius: 80px;
+	background-color: white;
+	
+}
+
+.stages-content
+{
+	/* display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px; */
+	background-color: lightpink;
+}
+
+/* stages parent containers */
+.stages-content > div
+{
+	display: flex;
+	flex-direction: row;
+
+}
+
+/*  stages paragraphs */
+.stages-content > div > p
+{
+	width: 700px;
+	height: 400px
+}
+
+.stages-content picture img
+{
+	width: 35%;
+	height: auto;
 }
 
 footer 
@@ -604,6 +673,13 @@ footer small
 		font-size: 7vw;
 		margin-top: 20px;
 	}
+
+	.stages-of-infection-parent h3
+	{
+		font-size: 5vw;
+		text-align: center;
+	}
+
 
 
 	footer 
