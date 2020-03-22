@@ -53,6 +53,7 @@ li,a,button
 	text-decoration: none;
 }
 
+/* #841b1d */
 body
 {
 	color: white;
@@ -250,7 +251,7 @@ em
 {
 	width: 437px;
 	height: 721px;
-	background-color: white;
+	/* background-color: white; */
 
 }
 
@@ -713,6 +714,12 @@ footer small
 		margin-top: 10px;
 	}
 
+
+	video
+	{
+		max-width: 100vw;
+		
+	}
 
 	footer 
 	{
