@@ -508,17 +508,18 @@ em
 	width: 40px;
 	height: 40px;
 }
+
 article > div
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	margin-bottom: 50px;
 }
 
 .details-panel
 {
 	width:332px;
-	height: 525px;
+	height: 550px;
 	padding: 25px;
 	background-color: white;
 	border-radius: 4px;
@@ -540,11 +541,27 @@ article > div
 	margin-bottom: 10px;
 }
 
-.rabies-dragged article p
+.rabies-dragged article h4
 {
-	font-size: 1.50vw;
+	font-size: 1.35vw;
 	font-weight: 500;
 	color: black;
+	margin-bottom: 10px;
+}
+
+.rabies-dragged article p
+{
+	font-size: 1.25vw;
+	font-weight: 500;
+	color: black;
+}
+
+.dimension-size
+{
+	display: block;
+	width: 40%;
+	height: auto;
+	margin-top: 20px;
 }
 
 footer 
@@ -778,6 +795,45 @@ footer small
 	{
 		max-width: 100vw;
 		
+	}
+
+		.rabies-dragged
+	{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	}
+
+	.rabies-close-up img {
+		width: 75%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+
+	.rabies-dragged article h3
+	{
+		font-size: 2vw;
+		font-weight: 300;
+		color: black;
+		margin-bottom: 10px;
+	}
+
+	.rabies-dragged article h4
+	{
+		font-size: 2.45vw;
+		font-weight: 500;
+		color: black;
+		margin-bottom: 10px;
+	}
+
+	.rabies-dragged article p
+	{
+		font-size: 2.25vw;
+		font-weight: 500;
+		color: black;
 	}
 
 	footer 
