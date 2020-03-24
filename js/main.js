@@ -41,13 +41,13 @@ let content = document.querySelector("#get-started");
 
 function addContent1() {
     content.innerHTML = `<h3 style="font-family: 'Optima'">We Are Family</h3>
-    <p>Rabies virus and 14 similar viruses, including Australian, European, Lagos, Mokola, Duvenhage, Bokeloh, Ikoma, and Lleida bat lyssaviruses, are members of the Rhabdoviridae family, genus <em>Lyssavirus</em>, which is derived from the Greek word lyssa, meaning “madness.” <em>Rabies</em> derives from the Sanskrit word rabhas, which means “to do violence.”1 Rabies virus and many lyssaviruses cause human encephalitis through zoonotic infection.</p>
+    <p>Rabies virus and 14 similar viruses, including <em>Australian, European, Lagos, Mokola, Duvenhage, Bokeloh, Ikoma, and Lleida bat lyssaviruses, are members of the Rhabdoviridae family</em>, genus Lyssavirus, which is derived from the Greek word lyssa, meaning <em>“madness.”</em> Rabies derives from the Sanskrit word rabhas, which means “to do violence.”1 Rabies virus and many lyssaviruses cause human encephalitis through zoonotic infection.</p>
     `
 }
 
 function addContent2() {
     content.innerHTML = `<h3 style="font-family: 'Optima'">The Spikes</h3>
-    <p>The virus envelope contains glycosylated G-protein spikes that bind to cells. The matrix (M) protein is located on the inner virus envelope, inside which the virus nucleoprotein (N) tightly binds the viral RNA to form the nucleocapsid core.</p>
+    <p>The virus envelope contains glycosylated G-protein spikes that bind to cells. The matrix protein is located on the inner virus envelope, inside which the virus nucleoprotein tightly binds the viral RNA to form the nucleocapsid core.</p>
     `
 }
 
