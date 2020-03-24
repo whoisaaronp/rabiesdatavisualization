@@ -86,6 +86,7 @@ p
 em 
 {
 	font-style: italic;
+	color: yellow;
 }
 
 .logo-container
@@ -268,16 +269,23 @@ em
 	margin-bottom: 20px;
 }
 
-/* .feature-container article p
+.feature-container article p
 {
 	margin-bottom: 20px;
-} */
+}
 
-.feature-container article span
+.feature-container article p:nth-child(4)
 {
-	font-size: 0.95vw;
+	font-size: 0.75vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+} 
+
+.feature-container article span:nth-child(1)
+{
+	display: block;
+	font-size: 1vw;
 	font-weight: 300;
-	margin-bottom: 20px;
 } 
 
 /* second content - rabies detail */
@@ -310,6 +318,15 @@ em
 	margin-bottom: 20px;
 
 }
+
+.rabies-details-text span:nth-child(1)
+{
+	display: block;
+	font-size: 1vw;
+	font-weight: 300;
+} 
+
+
 
 #statistic-report
 {
