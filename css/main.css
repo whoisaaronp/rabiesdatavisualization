@@ -53,6 +53,7 @@ li,a,button
 	text-decoration: none;
 }
 
+/* #841b1d */
 body
 {
 	color: white;
@@ -85,13 +86,20 @@ p
 em 
 {
 	font-style: italic;
+	color: yellow;
 }
 
 .logo-container
 {
+	cursor: pointer;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+.logo-text
+{
+	color: white;
 }
 
 .logo-container img
@@ -244,8 +252,6 @@ em
 {
 	width: 437px;
 	height: 721px;
-	background-color: white;
-
 }
 
 .feature-content article
@@ -261,16 +267,23 @@ em
 	margin-bottom: 20px;
 }
 
-/* .feature-container article p
+.feature-container article p
 {
 	margin-bottom: 20px;
-} */
+}
 
-.feature-container article span
+.feature-container article p:nth-child(4)
 {
-	font-size: 0.95vw;
+	font-size: 0.75vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+} 
+
+.feature-container article span:nth-child(1)
+{
+	display: block;
+	font-size: 1vw;
 	font-weight: 300;
-	margin-bottom: 20px;
 } 
 
 /* second content - rabies detail */
@@ -285,9 +298,55 @@ em
 
 .rabies-feature
 {
+
+	position: relative;
+	overflow: hidden;
 	width: 700px;
 	height: 500px;
+	border-radius: 4px;
+}
+
+#dot-1
+{
+	position: absolute;
+	top: 140px;
+	left: 400px;
+	width: 20px;
+	height: 20px;
 	background-color: white;
+	border-radius: 60px;
+	transition: all .2s ease-in-out;
+}
+
+#dot-2
+{
+	position: absolute;
+	top: 340px;
+	left: 350px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 60px;
+	transition: all .2s ease-in-out;
+}
+
+#dot-1:hover 
+{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 60px;
+	transform: scale(1.2);
+	transition: all .2s ease-in-out;
+}
+
+#dot-2:hover
+{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 60px;
+	transform: scale(1.2);
 }
 
 .rabies-details-text
@@ -303,6 +362,15 @@ em
 	margin-bottom: 20px;
 
 }
+
+.rabies-details-text span:nth-child(1)
+{
+	display: block;
+	font-size: 1vw;
+	font-weight: 300;
+} 
+
+
 
 #statistic-report
 {
@@ -411,12 +479,157 @@ em
 	width: 100%;
 	height: 600px;
 	border: 1px solid #fff;
+	padding: 30px;
+}
+
+/* stage of infection */
+.stages-of-infection-parent
+{
+	width: 100%;
+	height: auto;
+	margin-top: 150px;
+}
+
+.stages-of-infection-parent h3
+{
+	font-size: 3vw;
+	text-align: center;
+}
+
+.stages
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 70px;
+}
+
+.stages > div
+{
+	cursor: pointer;
+	width: 30px;
+	height:30px;
+	border-radius: 80px;
+	background-color: white;
+	transition: all .2s ease-in-out;
+}
+
+.stages > div:hover
+{
+	cursor: pointer;
+	width: 30px;
+	height:30px;
+	border-radius: 80px;
+	transform: scale(1.2);
+}
+
+.stages > div > p
+{
+	display: flex;
+	padding: 2px;
+	justify-content: center;
+	font-size: 0.95vw;
+	font-weight: 700;
+	color: black;
+}
+
+/*  stages of infection */
+.stage-infection-container
+{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.stage-infection-text p:nth-child(2)
+{
+	font-size: 1.2vw;
+	font-weight: 500;
+	line-height: 0.95vh;
+	margin-top: 10px;
+}
+
+.rabies-dragged
+{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+/* close button */
+.rabies-dragged a img
+{
+	position: absolute;
+	top: 5px;
+	left: 12px;
+	width: 40px;
+	height: 40px;
+}
+
+article > div
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+.details-panel
+{
+	width:332px;
+	height: 550px;
+	padding: 25px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+
+.rabies-close-up img
+{
+	width: 75%;
+	height: auto;
+}
+
+.rabies-dragged article h3
+{
+	font-size: 1vw;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.rabies-dragged article h4
+{
+	font-size: 1.35vw;
+	font-weight: 500;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.rabies-dragged article p
+{
+	font-size: 1.25vw;
+	font-weight: 500;
+	color: black;
+}
+
+.dimension-size
+{
+	display: block;
+	width: 40%;
+	height: auto;
+	margin-top: 20px;
 }
 
 footer 
 {	
     padding: 10px;
 	height: 8vh;
+	align-items: flex-end;
 }
 
 footer small 
@@ -605,6 +818,84 @@ footer small
 		margin-top: 20px;
 	}
 
+	.stages-of-infection-parent h3
+	{
+		font-size: 5vw;
+		text-align: center;
+	}
+
+	.stages > div > p 
+	{
+		display: flex;
+		padding: 2px;
+		justify-content: center;
+		font-size: 1.75vw;
+		font-weight: 700;
+		color: black;
+	}
+
+	.stage-infection-text p:nth-child(1)
+	{
+		font-size: 1.50vw;
+		font-weight: 300;
+		line-height: 0.95vh;
+		margin-bottom: 20px;
+		letter-spacing: 0.75px;
+	}
+
+	.stage-infection-text p:nth-child(2)
+	{
+		font-size: 1.95vw;
+		font-weight: 500;
+		line-height: 0.95vh;
+		margin-top: 10px;
+	}
+
+
+	video
+	{
+		max-width: 100vw;
+		
+	}
+
+		.rabies-dragged
+	{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	}
+
+	.rabies-close-up img {
+		width: 75%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+
+	.rabies-dragged article h3
+	{
+		font-size: 2vw;
+		font-weight: 300;
+		color: black;
+		margin-bottom: 10px;
+	}
+
+	.rabies-dragged article h4
+	{
+		font-size: 2.45vw;
+		font-weight: 500;
+		color: black;
+		margin-bottom: 10px;
+	}
+
+	.rabies-dragged article p
+	{
+		font-size: 2.25vw;
+		font-weight: 500;
+		color: black;
+	}
 
 	footer 
 	{
