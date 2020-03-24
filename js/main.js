@@ -33,3 +33,14 @@ const navSlide = () => {
 
 navSlide();
 
+
+// dot button show, hide toggle
+
+$(document).ready(function(){
+    // create a click event for the dot button to hide the first content and reveal
+    $('#dot-1').on('click', function(){
+
+        $('#get-started').toggle();
+    });
+    // $('#get-started').hide();
+});

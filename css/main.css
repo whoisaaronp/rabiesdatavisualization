@@ -252,8 +252,6 @@ em
 {
 	width: 437px;
 	height: 721px;
-	/* background-color: white; */
-
 }
 
 .feature-content article
@@ -300,9 +298,55 @@ em
 
 .rabies-feature
 {
+
+	position: relative;
+	overflow: hidden;
 	width: 700px;
 	height: 500px;
+	border-radius: 4px;
+}
+
+#dot-1
+{
+	position: absolute;
+	top: 140px;
+	left: 400px;
+	width: 20px;
+	height: 20px;
 	background-color: white;
+	border-radius: 60px;
+	transition: all .2s ease-in-out;
+}
+
+#dot-2
+{
+	position: absolute;
+	top: 340px;
+	left: 350px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 60px;
+	transition: all .2s ease-in-out;
+}
+
+#dot-1:hover 
+{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 60px;
+	transform: scale(1.2);
+	transition: all .2s ease-in-out;
+}
+
+#dot-2:hover
+{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 60px;
+	transform: scale(1.2);
 }
 
 .rabies-details-text
