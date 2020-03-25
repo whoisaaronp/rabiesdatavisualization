@@ -53,3 +53,4 @@ function addContent2() {
 
 dot1.addEventListener("click", addContent1);
 dot2.addEventListener("click", addContent2);
+

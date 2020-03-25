@@ -89,6 +89,11 @@ em
 	color: yellow;
 }
 
+strong 
+{
+	font-weight: bold;
+}
+
 .logo-container
 {
 	cursor: pointer;
@@ -413,6 +418,7 @@ em
 {
 	font-weight: 300;
 	font-size: 4vw;
+	color: yellow;
 }
 
 /* last feature content section */
