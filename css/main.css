@@ -132,6 +132,9 @@ strong
 {
 	text-transform: uppercase;
 	color: white;
+	-o-transition:  all 0.5s ease 0s;
+	-moz-transition:   all 0.5s ease 0s ;
+	-webkit-transition:  all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -320,6 +323,9 @@ strong
 	height: 20px;
 	background-color: white;
 	border-radius: 60px;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
@@ -332,6 +338,9 @@ strong
 	height: 20px;
 	background-color: white;
 	border-radius: 60px;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
@@ -343,6 +352,9 @@ strong
 	border-radius: 60px;
 	transform: scale(1.2);
 	transition: all .2s ease-in-out;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 }
 
 #dot-2:hover
@@ -352,6 +364,10 @@ strong
 	height: 20px;
 	border-radius: 60px;
 	transform: scale(1.2);
+	transition: all .2s ease-in-out;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 }
 
 .rabies-details-text
@@ -517,6 +533,9 @@ strong
 	height:30px;
 	border-radius: 80px;
 	background-color: white;
+	-o-transition:all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
@@ -526,6 +545,9 @@ strong
 	width: 30px;
 	height:30px;
 	border-radius: 80px;
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
 
@@ -656,17 +678,35 @@ article > div
 	position: relative;
 	width: 100%;
     height: auto;
-	z-index: 1;
 }
 
 #drag-item
 {
+	z-index: 1;
 	cursor: pointer;
 	position: absolute;
+	display: flex;
+	align-items: center;
 	width: 100px;
 	height: 100px;
+
+
+}
+
+#drag-item:hover
+{
 	border-radius: 60px; 
-	background-color: khaki;
+	border:1px solid #fff;
+	border-radius: 60px; 
+}
+
+
+/* gif virus image */
+#drag-item img
+{
+	overflow: hidden;
+	width: 140px;
+	height: auto;
 
 }
 
@@ -679,6 +719,7 @@ article > div
 	width: 500px;
 	height: 550px;
 	background-color:rgba(192,192,192,0.3);
+	z-index: 1;
 }
 
 /* scaling the virus */
@@ -803,6 +844,9 @@ footer small
 		height: 100vh;
 		background-color: #0f161c;
 		transform: translateX(100%);
+		-o-transition:  transform 0.3s ease-in;
+		-moz-transition:  transform 0.3s ease-in ;
+		-webkit-transition:  transform 0.3s ease-in ;
 		transition: transform 0.3s ease-in;
 	}
 
