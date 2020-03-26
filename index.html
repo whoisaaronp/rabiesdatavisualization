@@ -42,29 +42,40 @@
 	<!-- main content -->
 	<main class="main">
 		<!-- content -->
-		<section class="home-container">
-			<h2 class="hidden">Main Page</h2>
-			<h2>Furious</h2>
-			<h3 style="font-family: 'Optima'">Rabies</h3>
-			<p class="blurb">Welcome to a unique interactive learning experience. Touch the screen and scroll right on
-				the virus.</p>
-		</section>
-		<section class="discover-button">
-			<h2 class="hidden">Discover More Function - Scroll Magic</h2>
-			<div>
-				<p>Discover More</p>
-				<div class="hover-pointer">
-					<img src="images/down-indicator.png" alt="button indicator">
-				</div>
+		<div class="draggable-frame">
+			<div id="drag-item">
+				<!-- image here -->
 			</div>
-		</section>
+			<!-- <img src="images/" alt=""> -->
+			<section class="home-container">
+				<h2 class="hidden">Main Page</h2>
+				<h2>Furious</h2>
+				<h3 style="font-family: 'Optima'">Rabies</h3>
+				<p class="blurb">Welcome to a unique interactive learning experience. Touch the screen and scroll right
+					on
+					the virus.</p>
+			</section>
+			<section class="discover-button">
+				<h2 class="hidden">Discover More Function - Scroll Magic</h2>
+				<div>
+					<p>Discover More</p>
+					<div class="hover-pointer">
+						<img src="images/down-indicator.png" alt="button indicator">
+					</div>
+				</div>
+			</section>
+			<!-- drag area -->
+			<div id="drop-area">
+
+			</div>
+		</div>
 		<!-- scroll magic begins -->
 		<section class="feature-container">
 			<h2 class="hidden">Furious Rabies - Main Feature</h2>
 			<section class="feature-content">
 				<h3 class="hidden">History of Rabies</h3>
 				<div>
-					<video width="440" height="700" autoplay controls loop preload="auto">
+					<video width="440" height="700" autoplay muted controls loop preload="auto">
 						<source src="video/rabies-loop-micfloaties.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
@@ -119,19 +130,19 @@
 				</div>
 			</section>
 			<section id="statistic-report">
-				<h2 class="hidden">Global Statistic Reports</h2>
-				<h3 style="font-family: 'Optima'">Global Statistics Report</h3>
+				<h2 class="hidden">2019 Global Statistic Reports</h2>
+				<h3 style="font-family: 'Optima'">2019 Global Statistics Report</h3>
 			</section>
 			<section class="data-container">
 				<!-- 1 -->
 				<div class="data-columns">
 					<div class="data-title">
 						<!-- Infection -->
-						<h4>Number of Infected Cases</h4>
+						<h4>Death every 10 Minutes</h4>
 					</div>
 					<div class="data-number">
 						<p>
-							1000
+							1
 						</p> <!-- insert number here -->
 					</div>
 				</div>
@@ -139,12 +150,12 @@
 				<div class="data-columns">
 					<div class="data-title">
 						<!-- Infection -->
-						<h4>Number of Recovered Cases</h4>
+						<h4>Number Deaths a Year</h4>
 					</div>
 					<div class="data-number">
 						<!-- insert number here -->
 						<p>
-							1000
+							59000
 						</p>
 					</div>
 				</div>
@@ -186,7 +197,8 @@
 				<div class="rabies-details-text-2">
 					<h3 style="font-family: 'Optima'">Our Mission</h3>
 					<p>
-						<strong>AROUND THE WORLD SOMEONE DIES FROM RABIES EVERY NINE MINUTES</strong> Excepturi eum eius natus pariatur,
+						<strong>AROUND THE WORLD SOMEONE DIES FROM RABIES EVERY NINE MINUTES</strong> Excepturi eum eius
+						natus pariatur,
 						atque doloremque saepe aspernatur porro fugiat maiores quam labore facere, optio, quis
 						numquam commodi deleniti dolorem amet? Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Perferendis facere quia adipisci et. Ratione aliquid error tempora. Ad, officia iusto!
@@ -201,6 +213,8 @@
 			<small>&copy;Copyright 2020, London Lab of Biology</small>
 		</footer>
 	</main>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/Draggable.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
@@ -208,6 +222,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 	<script src="js/scrollMagic.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/dragme.js"></script>
 </body>
 
 </html>
