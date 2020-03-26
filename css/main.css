@@ -518,7 +518,7 @@ strong
 	text-align: center;
 }
 
-.stages
+.stages-button
 {
 	display: flex;
 	flex-direction: row;
@@ -526,7 +526,7 @@ strong
 	margin-top: 70px;
 }
 
-.stages > div
+.stages-button > div
 {
 	cursor: pointer;
 	width: 30px;
@@ -539,7 +539,7 @@ strong
 	transition: all .2s ease-in-out;
 }
 
-.stages > div:hover
+.stages-button > div:hover
 {
 	cursor: pointer;
 	width: 30px;
@@ -551,7 +551,7 @@ strong
 	transform: scale(1.2);
 }
 
-.stages > div > p
+.stages-button > div > p
 {
 	display: flex;
 	padding: 2px;

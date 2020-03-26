@@ -14,7 +14,6 @@ let rabies = document.querySelectorAll("#drag-item")
 const threshold = "50%"
 
 
-
 Draggable.create(rabies, {
 
     // step parameters for the edges to be recognized while dragging
@@ -34,16 +33,13 @@ Draggable.create(rabies, {
             // dropText.innerHTML =
             //     ` <p>Yes!-${e.target.id} can.</p>`;
             // console.log("Dropped, so open the page!");
-            
             // console.log(“Open Sesame”);
-            window.open("href(/rabies.html), _self");
-
+            window.open(href('file://rabies.html'), '_self');
         } else {
             console.log("Don't do anything")
             dropText.innerHTML =
                 `<p>Something else happened</p>`
         }
-
     }
 });
 
