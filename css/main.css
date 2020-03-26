@@ -132,6 +132,9 @@ strong
 {
 	text-transform: uppercase;
 	color: white;
+	-o-transition:  all 0.5s ease 0s;
+	-moz-transition:   all 0.5s ease 0s ;
+	-webkit-transition:  all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -320,6 +323,9 @@ strong
 	height: 20px;
 	background-color: white;
 	border-radius: 60px;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
@@ -332,6 +338,9 @@ strong
 	height: 20px;
 	background-color: white;
 	border-radius: 60px;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
@@ -343,6 +352,9 @@ strong
 	border-radius: 60px;
 	transform: scale(1.2);
 	transition: all .2s ease-in-out;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 }
 
 #dot-2:hover
@@ -352,6 +364,10 @@ strong
 	height: 20px;
 	border-radius: 60px;
 	transform: scale(1.2);
+	transition: all .2s ease-in-out;
+	-o-transition:   all .2s ease-in-out;
+	-moz-transition:   all .2s ease-in-out ;
+	-webkit-transition:   all .2s ease-in-out;
 }
 
 .rabies-details-text
@@ -502,7 +518,7 @@ strong
 	text-align: center;
 }
 
-.stages
+.stages-button
 {
 	display: flex;
 	flex-direction: row;
@@ -510,26 +526,32 @@ strong
 	margin-top: 70px;
 }
 
-.stages > div
+.stages-button > div
 {
 	cursor: pointer;
 	width: 30px;
 	height:30px;
 	border-radius: 80px;
 	background-color: white;
+	-o-transition:all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
-.stages > div:hover
+.stages-button > div:hover
 {
 	cursor: pointer;
 	width: 30px;
 	height:30px;
 	border-radius: 80px;
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
 
-.stages > div > p
+.stages-button > div > p
 {
 	display: flex;
 	padding: 2px;
@@ -656,17 +678,35 @@ article > div
 	position: relative;
 	width: 100%;
     height: auto;
-	z-index: 1;
 }
 
 #drag-item
 {
+	z-index: 1;
 	cursor: pointer;
 	position: absolute;
+	display: flex;
+	align-items: center;
 	width: 100px;
 	height: 100px;
+
+
+}
+
+#drag-item:hover
+{
 	border-radius: 60px; 
-	background-color: khaki;
+	border:1px solid #fff;
+	border-radius: 60px; 
+}
+
+
+/* gif virus image */
+#drag-item img
+{
+	overflow: hidden;
+	width: 140px;
+	height: auto;
 
 }
 
@@ -679,15 +719,20 @@ article > div
 	width: 500px;
 	height: 550px;
 	background-color:rgba(192,192,192,0.3);
+	z-index: 1;
 }
 
 /* scaling the virus */
 .virus-scaling-parent
 {
-	width: 100vw;
-	height: auto;
 	margin-top: 150px;
 	margin-bottom: 200px;
+}
+
+.virus-scaling-parent h3
+{
+	font-size: 3vw;
+	text-align: center;
 }
 
 .scaling-container
@@ -696,13 +741,18 @@ article > div
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
+	margin-top: 100px;
+}
+
+.rabies-scale
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .rabies-scale img
 {
-	display: flex;
-    justify-content: inherit;
-    align-items: center;
 	width: 1.25%;
 	height: auto;
 }
@@ -711,11 +761,17 @@ article > div
 .red-blood-cell img
 {
 	width: 90%;
-	padding: 20px;
 	height: auto;
-	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
 }
 
+.red-blood-cell div
+{
+	padding-top: 20px;
+	width: 88%;
+	height: 1px;
+	border-bottom: 1px solid #fff;
+}
 
 footer 
 {	
@@ -788,6 +844,9 @@ footer small
 		height: 100vh;
 		background-color: #0f161c;
 		transform: translateX(100%);
+		-o-transition:  transform 0.3s ease-in;
+		-moz-transition:  transform 0.3s ease-in ;
+		-webkit-transition:  transform 0.3s ease-in ;
 		transition: transform 0.3s ease-in;
 	}
 
