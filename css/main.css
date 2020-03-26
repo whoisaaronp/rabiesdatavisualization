@@ -684,10 +684,14 @@ article > div
 /* scaling the virus */
 .virus-scaling-parent
 {
-	width: 100vw;
-	height: auto;
 	margin-top: 150px;
 	margin-bottom: 200px;
+}
+
+.virus-scaling-parent h3
+{
+	font-size: 3vw;
+	text-align: center;
 }
 
 .scaling-container
@@ -696,13 +700,19 @@ article > div
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
+	margin-top: 80px;
+}
+
+.rabies-scale
+{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .rabies-scale img
 {
-	display: flex;
-    justify-content: inherit;
-    align-items: center;
 	width: 1.25%;
 	height: auto;
 }
@@ -711,11 +721,17 @@ article > div
 .red-blood-cell img
 {
 	width: 90%;
-	padding: 20px;
 	height: auto;
-	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
 }
 
+.red-blood-cell div
+{
+	padding-top: 20px;
+	width: 88%;
+	height: 1px;
+	border-bottom: 1px solid #fff;
+}
 
 footer 
 {	
