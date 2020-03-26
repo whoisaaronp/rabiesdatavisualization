@@ -34,13 +34,23 @@ const navSlide = () => {
 navSlide();
 
 
-// dot button show, hide toggle
+// Toggle will switch each content
+let dot1 = document.querySelector("#dot-1");
+let dot2 = document.querySelector("#dot-2");
+let content = document.querySelector("#get-started");
 
-$(document).ready(function(){
-    // create a click event for the dot button to hide the first content and reveal
-    $('#dot-1').on('click', function(){
+function addContent1() {
+    content.innerHTML = `<h3 style="font-family: 'Optima'">We Are Family</h3>
+    <p>Rabies virus and 14 similar viruses, including <em>Australian, European, Lagos, Mokola, Duvenhage, Bokeloh, Ikoma, and Lleida bat lyssaviruses, are members of the Rhabdoviridae family</em>, genus Lyssavirus, which is derived from the Greek word lyssa, meaning <em>“madness.”</em> Rabies derives from the Sanskrit word rabhas, which means “to do violence.”1 Rabies virus and many lyssaviruses cause human encephalitis through zoonotic infection.</p>
+    `
+}
 
-        $('#get-started').toggle();
-    });
-    // $('#get-started').hide();
-});
+function addContent2() {
+    content.innerHTML = `<h3 style="font-family: 'Optima'">The Spikes</h3>
+    <p>The virus envelope contains glycosylated G-protein spikes that bind to cells. The matrix protein is located on the inner virus envelope, inside which the virus nucleoprotein tightly binds the viral RNA to form the nucleocapsid core.</p>
+    `
+}
+
+dot1.addEventListener("click", addContent1);
+dot2.addEventListener("click", addContent2);
+
