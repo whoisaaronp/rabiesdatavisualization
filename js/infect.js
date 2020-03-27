@@ -19,27 +19,32 @@ function addStage1() {
     <p>An animal is bitten by a rabid animal.</p>
     `
     imageVar.setAttribute('src', 'stage-1.jpg');
-
+    
 }
 function addStage2() {
     stageGroups.innerHTML = `<p>Stage 2</p>
     <p> Rabies virus from the infected saliva enters the wound.</p>
     `
+    imageVar.setAttribute('src', 'stage-2.jpg');
+
 }
 function addStage3() {
     stageGroups.innerHTML = `<p>Stage 3</p>
     <p>Rabies virus travels through the nerves to the spinal cord and brain. This process can last approximately 3 to 12 weeks. The animal has no signs of illness during this time.</p>
     `
+    imageVar.setAttribute('src', 'stage-3.jpg');
 }
 function addStage4() {
     stageGroups.innerHTML = `<p>Stage 4</p>
     <p>When it reaches the brain, the virus multiplies rapidly and passes to the salivary glands. The animal begins to show signs of the disease.</p>
     `
+    imageVar.setAttribute('src', 'stage-4.jpg');
 }
 function addStage5() {
     stageGroups.innerHTML = `<p>Stage 5</p>
     <p>The infected animal usually dies within 7 days of becoming sick.</p>
     `
+    imageVar.setAttribute('src', 'stage-5.jpg');
 }
 
 stageOne.addEventListener("click", addStage1);

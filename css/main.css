@@ -944,13 +944,13 @@ footer small
 	}
 
 	/* symptoms page */
-	.rabies-symptom-video
+	.rabies-symptom-image
 	{
 		width: 640px;
 		height:320px;
 	}
 
-	.rabies-symptom-video img
+	.rabies-symptom-image img
 	{
 		border-radius: 2px;
 		overflow: hidden;
