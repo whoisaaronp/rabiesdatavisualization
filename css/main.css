@@ -473,7 +473,8 @@ strong
 {
 	width: 640px;
 	height:360px;
-	background-color: white;
+	border-radius: 2px;
+	overflow: hidden;
 }
 
 .rabies-details-text h3
@@ -574,7 +575,7 @@ strong
 {
 	font-size: 1.2vw;
 	font-weight: 500;
-	line-height: 0.95vh;
+	line-height: 1.50em;
 	margin-top: 10px;
 }
 
@@ -947,7 +948,12 @@ footer small
 	{
 		width: 640px;
 		height:320px;
-		background-color: white;
+	}
+
+	.rabies-symptom-video img
+	{
+		border-radius: 2px;
+		overflow: hidden;
 	}
 
 	.rabies-details-text 
