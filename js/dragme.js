@@ -3,9 +3,8 @@
 
 
 // let setup the drop zone
-let = dropZone = document.querySelector("#drop-area")
-
-let = dropText = document.querySelector(".recycleText")
+let dropZone = document.querySelector("#drop-area")
+let dropText = document.querySelector("#drop-area")
 
 // drag the rabies virus
 let rabies = document.querySelectorAll("#drag-item")
@@ -34,7 +33,7 @@ Draggable.create(rabies, {
             //     ` <p>Yes!-${e.target.id} can.</p>`;
             // console.log("Dropped, so open the page!");
             // console.log(“Open Sesame”);
-            window.open(href('file://rabies.html'), '_self');
+            window.open('/rabies.html', '_self');
         } else {
             console.log("Don't do anything")
             dropText.innerHTML =
@@ -42,15 +41,3 @@ Draggable.create(rabies, {
         }
     }
 });
-
-
-// function openmypage(href) {
-//     var rabiesPage = document.createElement('rabiesPage')
-//     // console.log(“Dropped has occured open the page.”);
-//     window.open("href(rabies.html), _self");
-//     onDragEnd(rabiesPage);
-// } else {
-// console.log("Don't do anything")
-// dropText.innerHTML =
-//     `<p>Something else happened</p>`
-// }
