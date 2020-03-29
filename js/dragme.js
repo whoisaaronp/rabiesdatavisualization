@@ -29,15 +29,12 @@ Draggable.create(rabies, {
     onDragEnd: function (e) {
         // When the drag has ended, its dropped -- open rabies.html link
         if (this.hitTest(dropZone, threshold)) {
-            // dropText.innerHTML =
-            //     ` <p>Yes!-${e.target.id} can.</p>`;
-            // console.log("Dropped, so open the page!");
-            // console.log(“Open Sesame”);
+
             window.open('/rabies.html', '_self');
         } else {
             console.log("Don't do anything")
             dropText.innerHTML =
-                `<p>Something else happened</p>`
+                `<p>Drag Virus into this section</p>`
         }
     }
 });

@@ -132,16 +132,16 @@ strong
 {
 	text-transform: uppercase;
 	color: white;
-	-o-transition:  all 0.5s ease 0s;
-	-moz-transition:   all 0.5s ease 0s ;
-	-webkit-transition:  all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
+	-o-transition:  all 500ms ease 0s;
+	-moz-transition:   all 500ms ease 0s ;
+	-webkit-transition:  all 500ms ease 0s;
+	transition: all 500ms ease 0s;
 }
 
 /* animation action */
 .nav-links li a:hover
 {
-	color: #0f161c;
+	color: yellow;
 
 }
 
@@ -312,7 +312,10 @@ strong
 	width: 700px;
 	height: 500px;
 	border-radius: 4px;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
 }
+
 
 #dot-1
 {
@@ -323,10 +326,10 @@ strong
 	height: 20px;
 	background-color: white;
 	border-radius: 60px;
-	-o-transition:   all .2s ease-in-out;
-	-moz-transition:   all .2s ease-in-out ;
-	-webkit-transition:   all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	-o-transition:   all 200ms ease-in-out;
+	-moz-transition:   all 200ms ease-in-out ;
+	-webkit-transition:   all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 #dot-2
@@ -338,10 +341,10 @@ strong
 	height: 20px;
 	background-color: white;
 	border-radius: 60px;
-	-o-transition:   all .2s ease-in-out;
-	-moz-transition:   all .2s ease-in-out ;
-	-webkit-transition:   all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	-o-transition:   all 200ms ease-in-out;
+	-moz-transition:   all 200ms ease-in-out ;
+	-webkit-transition:   all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 #dot-1:hover 
@@ -351,10 +354,10 @@ strong
 	height: 20px;
 	border-radius: 60px;
 	transform: scale(1.2);
-	transition: all .2s ease-in-out;
-	-o-transition:   all .2s ease-in-out;
-	-moz-transition:   all .2s ease-in-out ;
-	-webkit-transition:   all .2s ease-in-out;
+	transition: all 200ms ease-in-out;
+	-o-transition:   all 200ms ease-in-out;
+	-moz-transition:   all 200ms ease-in-out ;
+	-webkit-transition:   all 200ms ease-in-out;
 }
 
 #dot-2:hover
@@ -364,10 +367,10 @@ strong
 	height: 20px;
 	border-radius: 60px;
 	transform: scale(1.2);
-	transition: all .2s ease-in-out;
-	-o-transition:   all .2s ease-in-out;
-	-moz-transition:   all .2s ease-in-out ;
-	-webkit-transition:   all .2s ease-in-out;
+	transition: all 200ms ease-in-out;
+	-o-transition:   all 200ms ease-in-out;
+	-moz-transition:   all 200ms ease-in-out ;
+	-webkit-transition:   all 200ms ease-in-out;
 }
 
 .rabies-details-text
@@ -396,10 +399,26 @@ strong
 	display: flex;
 	justify-content: center;
 	margin-top: 40px;
+	margin-top: 100px;
 	margin-bottom: 150px;
 }
 
 #statistic-report h3
+{
+	font-size: 5vw;
+}
+
+.statistic-report
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-top: 175px;
+	margin-bottom: 50px;
+}
+
+
+.statistic-report h3
 {
 	font-size: 5vw;
 }
@@ -450,6 +469,9 @@ strong
 	width: 700px;
 	height: 500px;
 	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
 }
 
 .rabies-details-text-2
@@ -585,6 +607,7 @@ strong
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	margin-top: 80px;
 
 }
 
@@ -689,17 +712,17 @@ article > div
 	align-items: center;
 	width: 100px;
 	height: 100px;
-
+	transition-property: border-radius, transform;
+	transition-duration: 200ms;
 
 }
 
 #drag-item:hover
 {
-	border-radius: 60px; 
 	border:1px solid #fff;
 	border-radius: 60px; 
+	transform: scale(3);
 }
-
 
 /* gif virus image */
 #drag-item img
@@ -718,7 +741,6 @@ article > div
 	right: 20px;
 	width: 500px;
 	height: 550px;
-	background-color:rgba(192,192,192,0.3);
 	z-index: 1;
 }
 
@@ -945,14 +967,11 @@ footer small
 	/* symptoms page */
 	.rabies-symptom-image
 	{
+		overflow: hidden;
+		border-radius: 4px;
 		width: 640px;
 		height:320px;
-	}
-
-	.rabies-symptom-image img
-	{
-		border-radius: 2px;
-		overflow: hidden;
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	}
 
 	.rabies-details-text 
