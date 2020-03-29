@@ -373,7 +373,7 @@ strong
 .rabies-details-text
 {
 	width: 400px;
-	height: 600px;
+	height: 300px;
 	padding: 0px 40px 0px 40px;
 }
 
@@ -391,14 +391,12 @@ strong
 	font-weight: 300;
 } 
 
-
-
 #statistic-report
 {
 	display: flex;
 	justify-content: center;
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 150px;
 }
 
 #statistic-report h3
@@ -569,6 +567,7 @@ strong
 	flex-direction: row-reverse;
 	justify-content: center;
 	margin-top: 100px;
+	margin-bottom: 150px;
 }
 
 .stage-infection-text p:nth-child(2)
@@ -927,7 +926,7 @@ footer small
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		margin-top: 150px;
+		margin-top: 50px;
 	}
 
 	.data-container
