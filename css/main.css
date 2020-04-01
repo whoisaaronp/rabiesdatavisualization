@@ -56,6 +56,11 @@ li,a,button
 /* #841b1d */
 body
 {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	background-repeat: no-repeat;
@@ -710,9 +715,9 @@ article > div
 	position: absolute;
 	display: flex;
 	align-items: center;
-	width: 100px;
-	height: 100px;
-	transition-property: border-radius, transform;
+	width: 300px;
+	height: 300px;
+	transition-property: initial;
 	transition-duration: 200ms;
 
 }
@@ -720,15 +725,15 @@ article > div
 #drag-item:hover
 {
 	border:1px solid #fff;
-	border-radius: 60px; 
-	transform: scale(3);
+	border-radius: 300px; 
+	transform: scale(1);
 }
 
 /* gif virus image */
 #drag-item img
 {
 	overflow: hidden;
-	width: 140px;
+	width: 400px;
 	height: auto;
 
 }
@@ -795,6 +800,34 @@ article > div
 	border-bottom: 1px solid #fff;
 }
 
+.fullscreen-video-wrap
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.fullscreen-video-wrap video
+{
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.overlay
+{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: #2d1010;
+	opacity: 0.68;
+	z-index: -1;
+}
 footer 
 {	
     padding: 10px;
