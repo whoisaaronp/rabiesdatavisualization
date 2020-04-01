@@ -30,7 +30,7 @@ Draggable.create(rabies, {
         // When the drag has ended, its dropped -- open rabies.html link
         if (this.hitTest(dropZone, threshold)) {
 
-            window.open('/rabies.html', '_self');
+            window.open('rabies.html', '_self');
         } else {
             console.log("Don't do anything")
             dropText.innerHTML =
