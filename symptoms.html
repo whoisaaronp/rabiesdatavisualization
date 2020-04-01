@@ -12,6 +12,7 @@
 	<link rel="icon" href="images/flavicon.svg" type="image/gif" sizes="16x16">
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<script src="js/p5.min.js"></script>
 </head>
 
 <body>
@@ -43,22 +44,59 @@
 	<main class="main">
 		<!--  second content - rabies detail -->
 		<section class="rabies-details-container">
-			<h2 class="hidden"> Rabies Detials</h2>
+			<h2 class="hidden">Rabies Detials</h2>
 			<div class="rabies-symptom-video">
+				<!-- youtube video -->
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/IX82DVnwxhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class="rabies-details-text">
 				<span>Section: 0.000002</span><br>
 				<span>Hazard Identification</span>
-				<h3 style="font-family: 'Optima'">Symptoms</h3>
+				<h3 style="font-family: 'Optima'">Human Case</h3>
 				<p>
-					Symptoms begin only once the virus travels from the site of infection to the brain. Then, the
+					Watch this video that highlights the symptoms begin only once the virus travels from the site of infection to the brain. Then, the
 					infected individual experiences confusion, violent movements and excitement, loss of consciousness,
 					and fear of water. Yeah, hydrophobia is a real thing. In some cases, it can take up to 3 months for
 					symptoms to develop.
 				</p>
 			</div>
 		</section>
+				<!-- stage of the infection -->
+				<section class="stages-of-infection-parent">
+					<h2 class="hidden">Stages of Infection</h2>
+					<h3 style="font-family: 'Optima'">Stage of Infection</h3>
+					<!-- Reported number of human rabies deaths Data by country-->
+					<section class="stages-button">
+						<h2 class="hidden">Stage of Infection</h2>
+						<div id="stageOne">
+							<p>1</p>
+						</div>
+						<div id="stageTwo">
+							<p>2</p>
+						</div>
+						<div id="stageThree">
+							<p>3</p>
+						</div>
+						<div id="stageFour">
+							<p>4</p>
+						</div>
+						<div id="stageFive">
+							<p>5</p>
+						</div>
+					</section>
+					<!-- infection stages -->
+					<section class="stage-infection-container">
+						<h2 class="hidden">Rabies Details</h2>
+						<!-- images -->
+						<div class="rabies-symptom-image">
+							<img id="toggle-image" src="images/stage-1.jpg" alt="Dog Bite Action photo">
+						</div>
+						<div class="rabies-details-text stage-infection-text" id="toggle-infections">
+							<p>Stage 1</p>
+							<p>An animal is bitten by a rabid animal.</p>
+						</div>
+					</section>
+				</section>
 		<!-- global map -->
 		<section class="global-cases-report-parent" id="statistic-report">
 			<h2 class="hidden">Global Cases Report</h2>
@@ -67,45 +105,12 @@
 				<!-- global map -->
 			</picture>
 		</section>
-		<!-- stage of the infection -->
-		<section class="stages-of-infection-parent">
-			<h2 class="hidden">Stages of Infection</h2>
-			<h3 style="font-family: 'Optima'">Stage of Infection</h3>
-			<!-- Reported number of human rabies deaths Data by country-->
-			<section class="stages-button">
-				<h2 class="hidden">Stage of Infection</h2>
-				<div id="stageOne">
-					<p>1</p>
-				</div>
-				<div id="stageTwo">
-					<p>2</p>
-				</div>
-				<div id="stageThree">
-					<p>3</p>
-				</div>
-				<div id="stageFour">
-					<p>4</p>
-				</div>
-				<div id="stageFive">
-					<p>5</p>
-				</div>
-			</section>
-			<!-- infection stages -->
-			<section class="stage-infection-container">
-				<h2 class="hidden">Rabies Details</h2>
-				<div class="rabies-symptom-image" id="toggle-image">
-					<img src="images/stage-1.jpg" alt="Dog Bite Action photo">
-				</div>
-				<div class="rabies-details-text stage-infection-text" id="toggle-infections">
-					<p>Stage 1</p>
-					<p>An animal is bitten by a rabid animal.</p>
-				</div>
-			</section>
-		</section>
+
 		<footer>
 			<small>&copy; Copyright 2020, London Lab of Biology</small>
 		</footer>
 	</main>
+	<script src="js/p5map.js"></script>
 	<script src="js/infect.js"></script>
 </body>
 
