@@ -645,14 +645,15 @@ article>div {
 	align-items: center;
 	width: 300px;
 	height: 300px;
-	transition-property: initial;
-	transition-duration: 200ms;
+	transition-duration: 100ms;
+	-o-transition-duration: 100ms;
+	-moz-transition-duration: 100ms;
+	-webkit-transition-duration: 100ms;
 }
 
 #drag-item:hover {
 	border: 1px solid #fff;
 	border-radius: 300px;
-	transform: scale(1);
 }
 
 /* gif virus image */
@@ -779,6 +780,15 @@ article>div {
 .middle-content p {
 	font-size: 2vw;
 	line-height: 2.5vw;
+	text-align: center;
+}
+
+.yellow-highlight {
+	padding: 10px;
+	color: black;
+	font-size: 1vw;
+	font-weight: 700;
+	background-color: yellow;
 	text-align: center;
 }
 
