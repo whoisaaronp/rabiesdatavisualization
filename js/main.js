@@ -53,3 +53,40 @@ function addContent2() {
 
 dot1.addEventListener("click", addContent1);
 dot2.addEventListener("click", addContent2);
+
+
+// Greensock scrollTO
+// document.querySelectorAll("#scroll1Btn").forEach((section, index) => {
+//     btn.addEventListener("click", () => {
+//         console.log("It's scrolling");
+//         gsap.to(window, { duration: 1, scrollTo: { y: "#scrollHere" + (index + 1), offsetY: 70 } });
+//         // gsap.to(window, {duration: 2, scrollTo: "#scrollHere"});
+//     });
+// });
+
+
+
+
+$(function () {
+
+    var wrapper = $("#scroll1Btn"),
+        $hoverpointer = $(".hover-pointer"),
+        $window = $(window);
+
+    $hoverpointer.on("click", ".discover-button", function () {
+        var $this = $(this),
+            div = $this.attr("div"),
+            topY = $(href).offset().top;
+
+        TweenMax.to($window, 1, {
+            scrollTo: {
+                y: topY,
+                autoKill: true
+            },
+            ease: Power3.easeOut
+        });
+
+        return false;
+    });
+
+});

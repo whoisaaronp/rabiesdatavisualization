@@ -768,8 +768,7 @@ article>div {
 	z-index: -1;
 }
 
-.middle-content
-{
+.middle-content {
 	width: 65%;
 	height: auto;
 	margin: 0 auto;
@@ -777,8 +776,7 @@ article>div {
 	margin-bottom: 100px;
 }
 
-.middle-content p
-{
+.middle-content p {
 	font-size: 2vw;
 	line-height: 2.5vw;
 	text-align: center;
