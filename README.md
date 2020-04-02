@@ -8,5 +8,5 @@ Using Font-face Optima and Google Font: Open Sans
 Aaron Paterson
 
 # Professor(s)
-Marco De Luca
+Marco De Luca &
 John Bennett
