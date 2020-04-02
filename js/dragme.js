@@ -24,6 +24,7 @@ Draggable.create(rabies, {
     // its working, great.
     onDrag: function () {
         console.log("I'm begin Dragged")
+        dropZone.style.border = "solid 1px yellow";
         e.default();
     },
     onDragEnd: function (e) {
@@ -34,7 +35,8 @@ Draggable.create(rabies, {
         } else {
             console.log("Don't do anything")
             dropText.innerHTML =
-                `<p>Drag Virus into this section</p>`
+                `<p class="yellow-highlight">Quarantine Virus into this section</p>`
+            dropZone.style.border = "";
         }
     }
 });
