@@ -423,6 +423,7 @@ strong {
 }
 
 .rabies-feature-2 {
+	overflow: hidden;
 	width: 700px;
 	height: 500px;
 	background-color: white;
@@ -439,6 +440,14 @@ strong {
 .rabies-details-text-2 h3 {
 	font-size: 3vw;
 	margin-bottom: 20px;
+}
+
+.rabies-details-container-2 a {
+	text-decoration: none;
+	font-weight: 500;
+	cursor: pointer;
+	padding-top: 20px;
+	color: yellow;
 }
 
 /* symptoms page */
@@ -710,37 +719,62 @@ article>div {
 }
 
 .scaling-container {
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	margin-top: 100px;
+	margin: 0 auto;
 }
 
 .rabies-scale {
+	width: 100%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+.rabies-scale>div {
+	display: flex;
+	justify-content: center;
+}
+
 .rabies-scale img {
-	width: 1.25%;
+	border-radius: 90px;
+	padding: 30px;
+	border: 1px solid #fff;
+}
+
+.rabies-scale img {
+	width: 15.25%;
 	height: auto;
 }
 
 /* reb blood cell */
 
-.red-blood-cell img {
-	width: 90%;
+.red-blood-cell-scale {
+	width: 100%;
 	height: auto;
-	border-right: 1px solid #fff;
 }
 
-.red-blood-cell div {
+.red-blood-cell-scale p{
+	padding-bottom: 20px;
+}
+
+.red-blood-cell-scale img {
+	width: 100%;
+	height: auto;
+}
+
+.red-blood-cell-scale div {
+	padding: 30px;
+	border-left: 1px solid #fff;
+}
+
+.red-blood-cell-scale p:nth-child(3) {
 	padding-top: 20px;
-	width: 88%;
-	height: 1px;
-	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
 }
 
 .fullscreen-video-wrap {
@@ -777,8 +811,8 @@ article>div {
 	margin-bottom: 100px;
 }
 
-.middle-content p {
-	font-size: 2vw;
+.middle-content h3 {
+	font-size: 3vw;
 	line-height: 2.5vw;
 	text-align: center;
 }
@@ -792,6 +826,22 @@ article>div {
 	text-align: center;
 }
 
+.fade {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 footer {
 	padding: 10px;
 	height: 8vh;
@@ -801,7 +851,7 @@ footer {
 footer small {
 	color: white;
 	font-weight: 300;
-	font-size: 1vw;
+	font-size: 0.75vw;
 	height: 10px;
 	margin: 0 auto;
 }

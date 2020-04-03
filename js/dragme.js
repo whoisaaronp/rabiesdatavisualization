@@ -24,6 +24,9 @@ Draggable.create(rabies, {
     // its working, great.
     onDrag: function () {
         console.log("I'm begin Dragged")
+        // on drag highlight the section for quarantine
+        dropText.innerHTML =
+            `<p class="yellow-highlight">Quarantine the virus into this section</p>`;
         dropZone.style.border = "solid 1px yellow";
         e.default();
     },
@@ -34,8 +37,9 @@ Draggable.create(rabies, {
             window.open('rabies.html', '_self');
         } else {
             console.log("Don't do anything")
+            // the area will be removed on release
             dropText.innerHTML =
-                `<p class="yellow-highlight">Quarantine Virus into this section</p>`
+                ``;
             dropZone.style.border = "";
         }
     }
