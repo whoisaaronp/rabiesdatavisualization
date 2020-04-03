@@ -423,6 +423,7 @@ strong {
 }
 
 .rabies-feature-2 {
+	overflow: hidden;
 	width: 700px;
 	height: 500px;
 	background-color: white;
@@ -439,6 +440,14 @@ strong {
 .rabies-details-text-2 h3 {
 	font-size: 3vw;
 	margin-bottom: 20px;
+}
+
+.rabies-details-container-2 a {
+	text-decoration: none;
+	font-weight: 500;
+	cursor: pointer;
+	padding-top: 20px;
+	color: yellow;
 }
 
 /* symptoms page */
@@ -747,9 +756,10 @@ article>div {
 .red-blood-cell-scale {
 	width: 100%;
 	height: auto;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
+}
+
+.red-blood-cell-scale p{
+	padding-bottom: 20px;
 }
 
 .red-blood-cell-scale img {
@@ -801,8 +811,8 @@ article>div {
 	margin-bottom: 100px;
 }
 
-.middle-content p {
-	font-size: 2vw;
+.middle-content h3 {
+	font-size: 3vw;
 	line-height: 2.5vw;
 	text-align: center;
 }
@@ -841,7 +851,7 @@ footer {
 footer small {
 	color: white;
 	font-weight: 300;
-	font-size: 1vw;
+	font-size: 0.75vw;
 	height: 10px;
 	margin: 0 auto;
 }
