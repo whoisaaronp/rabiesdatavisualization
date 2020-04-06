@@ -1,15 +1,21 @@
 ## Rabies Virus - Data Vizualization
-Drag and Drop features Data 
+The plan is to built a 3D model of the Rabies Virus using Cinema 4D. Followd by building a medical touch screen to showcase functionality, outbreak details, countries most affected, intensification over time etc with HTML CSS and Javascript.
 
-## Fonts 
-Using Font-face Optima and Google Font: Open Sans
+## Rabies Virus Model
+![Image description](images/rabies-up-close-dof.png)
 
+## Fonts
+```@ Font-face Optima,
+Google Font: Open Sans
+```
 ## Arthor
 Aaron Paterson
 
 ## Libraries used
-ScrollMagic [ScrollMagic](http://scrollmagic.io/) to install.
+Enjoy [ScrollMagic](http://scrollmagic.io/) to install.
 
 ## Scientific Resources
-Science Direct [Science Report](https://www.sciencedirect.com/topics/neuroscience/rabies-virus)
+```Rabies [Science Report](https://www.sciencedirect.com/topics/neuroscience/rabies-virus),
+[Mission Rabies](http://www.missionrabies.com/)
 Scientific American [Medical Mystery: Only One Person Has Survived Rabies without Vaccine--But How?](https://www.scientificamerican.com/article/jeanna-giese-rabies-survivor/)
+```
