@@ -478,9 +478,17 @@ strong {
 }
 
 .global-cases-report-parent picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 600px;
-	border: 1px solid #fff;
+	padding: 30px;
+}
+
+.global-cases-report-parent img {
+	width: 75%;
+	height: 600px;
 	padding: 30px;
 }
 
