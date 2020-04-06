@@ -11,12 +11,12 @@ Google Font: Open Sans
 ```
 
 ## Libraries used
-Enjoy [Greenosock](https://greensock.com/)
+Enjoy [Greensock](https://greensock.com/),
 Enjoy [ScrollMagic](http://scrollmagic.io/) 
 
 ## Scientific Resources
 ```Rabies [Science Report](https://www.sciencedirect.com/topics/neuroscience/rabies-virus),
-[Mission Rabies](http://www.missionrabies.com/)
+[Mission Rabies](http://www.missionrabies.com/),
 Scientific American [Medical Mystery: Only One Person Has Survived Rabies without Vaccine--But How?](https://www.scientificamerican.com/article/jeanna-giese-rabies-survivor/)
 ```
 
