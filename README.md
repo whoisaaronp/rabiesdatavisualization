@@ -2,7 +2,7 @@
 The plan is to built a 3D model of the Rabies Virus using Cinema 4D. Followd by building a medical touch screen to showcase functionality, outbreak details, countries most affected, intensification over time etc with HTML CSS and Javascript.
 
 ## Rabies Virus Model
-![Image description](images/rabies-up-close-dof.png)
+![3D Virus Model](images/rabies-up-close-dof.png)
 
 ## Fonts
 ```@ Font-face Optima,
