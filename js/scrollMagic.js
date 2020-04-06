@@ -1,5 +1,4 @@
 
-
 // init controller
 var controller = new ScrollMagic.Controller();
 
@@ -7,9 +6,9 @@ var controller = new ScrollMagic.Controller();
 // triggerhook onCenter for execution at the center of the screen
 new ScrollMagic.Scene({
     triggerElement: "#statistic-report",
-    triggerHook: "onEnter",
+    triggerHook: 0,
 })
-
+    .setPin('#statistic-report')
     //.addIndicators() // for debugging purposes
     .addTo(controller);
 

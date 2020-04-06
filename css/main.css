@@ -758,7 +758,7 @@ article>div {
 	height: auto;
 }
 
-.red-blood-cell-scale p{
+.red-blood-cell-scale p {
 	padding-bottom: 20px;
 }
 
@@ -826,18 +826,23 @@ article>div {
 	text-align: center;
 }
 
-.fade {
-	animation: fadein 2s;
+.fade-in-out {
+	width: 200px;
+	height: 200px;
+	background: red;
+	-webkit-animation: fadeinout 4s linear forwards;
+	animation: fadeinout 4s linear forwards;
+	opacity: 0;
 }
 
-@keyframes fadein {
-	from {
+@-webkit-keyframes fadeinout {
+	50% {
 		opacity: 1;
 	}
+}
+
+@keyframes fadeinout {
 	50% {
-		opacity: 0;
-	}
-	to {
 		opacity: 1;
 	}
 }
@@ -993,6 +998,12 @@ footer small {
 	.rabies-details-text h3 {
 		font-size: 7vw;
 		margin-top: 20px;
+	}
+	.source-link {
+		font-size: 0.75vw;
+		font-weight: 300;
+		letter-spacing: 1px;
+		background-color: mediumvioletred;
 	}
 	.stages-of-infection-parent h3 {
 		font-size: 5vw;
