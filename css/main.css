@@ -4,28 +4,28 @@
 	font-family: 'Optima';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Optima'), url('OPTIMA.woff') format('woff');
+	src: local('Optima'), url('/assets/fonts/OPTIMA.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Optima Italic';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Optima Italic'), url('Optima_Italic.woff') format('woff');
+	src: local('Optima Italic'), url('/assets/fonts/Optima_Italic.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Optima Medium';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Optima Medium'), url('Optima Medium.woff') format('woff');
+	src: local('Optima Medium'), url('/assets/fonts/Optima\ Medium.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Optima Bold';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+	src: local('Optima Bold'), url('/assets/fonts/OPTIMA_B.woff') format('woff');
 }
 
 /*CSS document*/
@@ -478,9 +478,17 @@ strong {
 }
 
 .global-cases-report-parent picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 600px;
-	border: 1px solid #fff;
+	padding: 30px;
+}
+
+.global-cases-report-parent img {
+	width: 75%;
+	height: 600px;
 	padding: 30px;
 }
 
@@ -748,7 +756,7 @@ article>div {
 
 .rabies-scale img {
 	width: 15.25%;
-	height: auto;
+	height: 15%;
 }
 
 /* reb blood cell */
@@ -758,7 +766,7 @@ article>div {
 	height: auto;
 }
 
-.red-blood-cell-scale p{
+.red-blood-cell-scale p {
 	padding-bottom: 20px;
 }
 
@@ -826,18 +834,23 @@ article>div {
 	text-align: center;
 }
 
-.fade {
-	animation: fadein 2s;
+.fade-in-out {
+	width: 200px;
+	height: 200px;
+	background: red;
+	-webkit-animation: fadeinout 4s linear forwards;
+	animation: fadeinout 4s linear forwards;
+	opacity: 0;
 }
 
-@keyframes fadein {
-	from {
+@-webkit-keyframes fadeinout {
+	50% {
 		opacity: 1;
 	}
+}
+
+@keyframes fadeinout {
 	50% {
-		opacity: 0;
-	}
-	to {
 		opacity: 1;
 	}
 }
@@ -993,6 +1006,12 @@ footer small {
 	.rabies-details-text h3 {
 		font-size: 7vw;
 		margin-top: 20px;
+	}
+	.source-link {
+		font-size: 0.75vw;
+		font-weight: 300;
+		letter-spacing: 1px;
+		background-color: mediumvioletred;
 	}
 	.stages-of-infection-parent h3 {
 		font-size: 5vw;

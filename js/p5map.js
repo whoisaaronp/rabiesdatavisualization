@@ -7,13 +7,18 @@
 
 // var cities;
 
-// function preload(){
+// function preload() {
 //     cities = loadTable("data/worldcities.csv", "header");
 //     console.log('firing');
 // }
 
+// // resize the window
+// function windowResized() {
 
-// function setup(){
+// }
+
+
+// function setup() {
 //     createCanvas(windowWidth, windowHeight);
 //     stroke(2);
 //     fill('#F2EDE4');
@@ -27,10 +32,10 @@
 // function draw() {
 
 //     scale(1);
-//     translate(-95,-10);
+//     translate(-95, -10);
 
 //     // for loop, check the rows and increment by one
-//     for(var i=0; i < cities.getRowCount(); i++){
+//     for (var i = 0; i < cities.getRowCount(); i++) {
 //         // cycling through gathering lat and long
 //         var latitude = cities.getNum(i, "lat");
 //         var longtitude = cities.getNum(i, "lng");
@@ -43,6 +48,6 @@
 //         var x = map(lng, -180, 180, 0, width);
 //         var y = map(lat, 90, -90, 0, height);
 //         strokeWeight(0.25);
-//         ellipse(x,y,1,1);
+//         ellipse(x, y, 1, 1);
 //     }
 // }

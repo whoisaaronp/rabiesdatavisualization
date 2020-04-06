@@ -1,12 +1,15 @@
-# Rabies Virus - Data Vizualization
+## Rabies Virus - Data Vizualization
 Drag and Drop features Data 
 
-# Fonts 
+## Fonts 
 Using Font-face Optima and Google Font: Open Sans
 
-# Arthor
+## Arthor
 Aaron Paterson
 
-# Professor(s)
-Marco De Luca &
-John Bennett
+## Libraries used
+ScrollMagic [ScrollMagic](http://scrollmagic.io/) to install.
+
+## Scientific Resources
+Science Direct [Science Report](https://www.sciencedirect.com/topics/neuroscience/rabies-virus)
+Scientific American [Medical Mystery: Only One Person Has Survived Rabies without Vaccine--But How?](https://www.scientificamerican.com/article/jeanna-giese-rabies-survivor/)
