@@ -924,7 +924,7 @@ footer small {
 		font-weight: 200;
 	}
 	.nav-links li {
-		opacity: 0px;
+		opacity: 0;
 	}
 	.home-container h2 {
 		text-transform: uppercase;
@@ -1100,7 +1100,7 @@ footer small {
 
 @keyframes navLinkFade {
 	from {
-		opacity: 0px;
+		opacity: 0;
 		-o-transform: translateX(50px);
 		-webkit-transform: translateX(50px);
 		-moz-transform: translateX(50px);
@@ -1108,7 +1108,7 @@ footer small {
 		transform: translateX(50px);
 	}
 	to {
-		opacity: 1px;
+		opacity: 1;
 		-o-transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 		-moz-transform: translateX(0%);
