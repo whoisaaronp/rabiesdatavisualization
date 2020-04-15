@@ -13,6 +13,9 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<script src="js/p5.min.js"></script>
+	<script src="https://d3js.org/d3.v4.js"></script>
+	<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 </head>
 
 <body>
@@ -104,9 +107,12 @@
 		<section class="global-cases-report-parent" id="statistic-report">
 			<h2 class="hidden">Global Cases Report</h2>
 			<h3 style="font-family: 'Optima'">Global Case Reports</h3>
-			<picture>
+			<!-- <picture>
 				<img src="images/rabies-global-map.svg" alt="Global Map of Rabies Cases">
-			</picture>
+			</picture> -->
+
+			<!-- Create an element where the map will take place -->
+			<svg id="rabies-global-dataviz" width="1024" height="600"></svg>
 		</section>
 
 		<footer>
@@ -115,6 +121,8 @@
 	</main>
 	<script src="js/p5map.js"></script>
 	<script src="js/infect.js"></script>
+	<script src="js/bubblemap.js"></script>
+	
 </body>
 
 </html>

@@ -855,6 +855,13 @@ article>div {
 	}
 }
 
+#rabies-global-dataviz
+{
+	margin-top: 30px;
+	background-color:white;
+
+}
+
 footer {
 	padding: 10px;
 	height: 8vh;
