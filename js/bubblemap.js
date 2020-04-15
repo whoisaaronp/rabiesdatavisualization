@@ -40,7 +40,7 @@ function ready(error, dataGeo, data) {
             .projection(projection)
         )
       .style("stroke", "white")
-      .style("opacity", .4)
+      .style("opacity", .5)
 
   // Add circles:
   svg
@@ -52,8 +52,8 @@ function ready(error, dataGeo, data) {
       .attr("cy", function(d){ return projection([+d.homelon, +d.homelat])[1] })
       .attr("r", function(d){ return size(+d.n) })
       .style("fill", function(d){ return color(d.homecontinent) })
-      .attr("stroke", function(d){ if(d.n>2000){return "black"}else{return "none"}  })
-      .attr("stroke-width", 0)
+      .attr("stroke", function(d){ if(d.n>2000){return "white"}else{return "none"}  })
+      .attr("stroke-width", 1)
       .attr("fill-opacity", .2)
 
 
