@@ -173,9 +173,11 @@ strong {
 
 .home-container h2 {
 	text-transform: uppercase;
+	letter-spacing: 2rem;
 	font-weight: 100;
 	font-size: 2.50rem;
 	font-kerning: initial;
+	margin-bottom: 20px;
 }
 
 /* main page header */
@@ -639,7 +641,7 @@ article>div {
 }
 
 .rabies-dragged article p {
-	font-size: 1.25vw;
+	font-size: 1.333vw;
 	font-weight: 500;
 	color: black;
 }
