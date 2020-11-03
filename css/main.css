@@ -634,14 +634,14 @@ article>div {
 }
 
 .rabies-dragged article h4 {
-	font-size: 1.35vw;
+	font-size: 1vw;
 	font-weight: 500;
 	color: black;
 	margin-bottom: 10px;
 }
 
 .rabies-dragged article p {
-	font-size: 1.333vw;
+	font-size: 1vw;
 	font-weight: 500;
 	color: black;
 }
